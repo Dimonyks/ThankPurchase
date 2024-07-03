@@ -37,6 +37,7 @@ body {
     max-width: 1100px; /* Максимальная ширина контента */
     margin: auto; /* Центрируем контент */
     margin-top: auto; /* Верхний отступ для контента */
+    position: absolute;
 }
 
 h1 {
