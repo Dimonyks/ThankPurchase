@@ -3,7 +3,7 @@ body {
     margin: 0; /* Убираем отступы по умолчанию */
     padding: 0; /* Убираем внутренние отступы по умолчанию */
     font-family: Arial, sans-serif; /* Устанавливаем основной шрифт */
-    background: url('5176555.jpg') no-repeat center center fixed; /* Устанавливаем фон страницы */
+    background: url('now_fon.jpg') no-repeat center center fixed; /* Устанавливаем фон страницы */
     background-size: cover; /* Масштабируем фон для полного покрытия */
     color: white; /* Устанавливаем белый цвет текста */
     text-align: center; /* Выравниваем текст по центру */
@@ -51,7 +51,7 @@ p {
 .discount {
     font-size: 1.8em; /* Размер шрифта для промокода */
     font-weight: bold; /* Жирный шрифт для промокода */
-    background-color: rgb(195, 129, 240); /* Основной цвет заливки промокода */
+    background-color: rgb(77, 35, 105); /* Основной цвет заливки промокода */
     color: black; /* Цвет текста промокода */
     padding: 10px 20px; /* Внутренние отступы промокода */
     border-radius: 5px; /* Скругленные углы */
