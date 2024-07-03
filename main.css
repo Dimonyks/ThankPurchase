@@ -1,168 +1,183 @@
+/* Общие стили */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('5176555.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    text-align: center;
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем внутренние отступы по умолчанию */
+    font-family: Arial, sans-serif; /* Устанавливаем основной шрифт */
+    background: url('5176555.jpg') no-repeat center center fixed; /* Устанавливаем фон страницы */
+    background-size: cover; /* Масштабируем фон для полного покрытия */
+    color: white; /* Устанавливаем белый цвет текста */
+    text-align: center; /* Выравниваем текст по центру */
+    backdrop-filter: blur(10px); /* Размываем задний фон */
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.5);
+    display: flex; /* Устанавливаем flex-контейнер */
+    flex-direction: column; /* Размещаем элементы в колонку */
+    align-items: center; /* Выравниваем элементы по центру по горизонтали */
+    justify-content: center; /* Выравниваем элементы по центру по вертикали */
+    height: 100vh; /* Высота контейнера 100% высоты экрана */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+    position: relative; /* Относительное позиционирование для использования абсолютного позиционирования у вложенных элементов */
+}
+
+.logo {
+    width: 100%; /* Ширина логотипа 100% от родительского контейнера */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    position: absolute; /* Абсолютное позиционирование */
+    padding-bottom: 75vh; /* Отступ снизу для логотипа */
+    margin-left: 35vh; /* Отступ слева для логотипа */
+    margin-right: 35vh; /* Отступ справа для логотипа */
 }
 
 .logo img {
-    max-width: 400px; /* Увеличил размер логотипа */
+    max-width: 400px; /* Максимальная ширина логотипа */
 }
 
 .content {
-    max-width: 1100px;
-    margin: auto;
-    margin-top: 200px;
+    max-width: 1100px; /* Максимальная ширина контента */
+    margin: auto; /* Центрируем контент */
+    margin-top: auto; /* Верхний отступ для контента */
 }
 
 h1 {
-    font-size: 3em; /* Увеличил размер текста заголовка */
+    font-size: 3em; /* Размер шрифта заголовка */
 }
 
 p {
-    font-size: 1.5em; /* Увеличил размер текста */
-    margin: 15px 0;
+    font-size: 1.5em; /* Размер шрифта параграфов */
+    margin: 15px 0; /* Вертикальные отступы параграфов */
 }
 
 .discount {
-    font-size: 1.8em; /* Увеличил размер текста промокода */
-    font-weight: bold;
+    font-size: 1.8em; /* Размер шрифта для промокода */
+    font-weight: bold; /* Жирный шрифт для промокода */
     background-color: rgb(195, 129, 240); /* Основной цвет заливки промокода */
     color: black; /* Цвет текста промокода */
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 10px 20px; /* Внутренние отступы промокода */
+    border-radius: 5px; /* Скругленные углы */
 }
 
-/* Адаптивные стили */
+/* Адаптивные стили для ширины экрана 1366px */
 @media (max-width: 1366px) {
     .logo img {
-        max-width: 350px;
+        max-width: 350px; /* Уменьшаем максимальную ширину логотипа */
     }
 
     .content {
-        max-width: 1000px;
-        margin-top: 180px;
+        max-width: 1000px; /* Уменьшаем максимальную ширину контента */
+        margin-top: 180px; /* Уменьшаем верхний отступ для контента */
     }
 
     h1 {
-        font-size: 2.8em;
+        font-size: 2.8em; /* Уменьшаем размер шрифта заголовка */
     }
 
     p {
-        font-size: 1.4em;
+        font-size: 1.4em; /* Уменьшаем размер шрифта параграфов */
     }
 
     .discount {
-        font-size: 1.6em;
-        padding: 10px 20px;
+        font-size: 1.6em; /* Уменьшаем размер шрифта промокода */
+        padding: 10px 20px; /* Внутренние отступы промокода */
     }
 }
 
+/* Адаптивные стили для ширины экрана 1280px */
 @media (max-width: 1280px) {
     .logo img {
-        max-width: 320px;
+        max-width: 320px; /* Уменьшаем максимальную ширину логотипа */
     }
 
     .content {
-        max-width: 900px;
-        margin-top: 160px;
+        max-width: 1000px; /* Уменьшаем максимальную ширину контента */
+        margin-top: 200px; /* Уменьшаем верхний отступ для контента */
     }
 
     h1 {
-        font-size: 2.5em;
+        font-size: 2.5em; /* Уменьшаем размер шрифта заголовка */
     }
 
     p {
-        font-size: 1.3em;
+        font-size: 1.3em; /* Уменьшаем размер шрифта параграфов */
     }
 
     .discount {
-        font-size: 1.5em;
-        padding: 10px 20px;
+        font-size: 1.5em; /* Уменьшаем размер шрифта промокода */
+        padding: 10px 20px; /* Внутренние отступы промокода */
     }
 }
 
+/* Адаптивные стили для ширины экрана 996px */
 @media (max-width: 996px) {
     .logo img {
-        max-width: 300px;
+        max-width: 300px; /* Уменьшаем максимальную ширину логотипа */
     }
 
     .content {
-        max-width: 700px;
-        margin-top: 140px;
+        max-width: 800px; /* Уменьшаем максимальную ширину контента */
+        margin-top: 190px; /* Уменьшаем верхний отступ для контента */
     }
 
     h1 {
-        font-size: 2.3em;
+        font-size: 2.3em; /* Уменьшаем размер шрифта заголовка */
     }
 
     p {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Уменьшаем размер шрифта параграфов */
     }
 
     .discount {
-        font-size: 1.4em;
-        padding: 10px 20px;
+        font-size: 1.4em; /* Уменьшаем размер шрифта промокода */
+        padding: 10px 20px; /* Внутренние отступы промокода */
     }
 }
 
+/* Адаптивные стили для ширины экрана 768px */
 @media (max-width: 768px) {
     .logo img {
-        max-width: 280px;
+        max-width: 280px; /* Уменьшаем максимальную ширину логотипа */
     }
 
     .content {
-        max-width: 600px;
-        margin-top: 120px;
+        max-width: 700px; /* Уменьшаем максимальную ширину контента */
+        margin-top: 170px; /* Уменьшаем верхний отступ для контента */
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 2em; /* Уменьшаем размер шрифта заголовка */
     }
 
     p {
-        font-size: 1.1em;
+        font-size: 1.1em; /* Уменьшаем размер шрифта параграфов */
     }
 
     .discount {
-        font-size: 1.3em;
-        padding: 8px 16px;
+        font-size: 1.3em; /* Уменьшаем размер шрифта промокода */
+        padding: 8px 16px; /* Уменьшаем внутренние отступы промокода */
     }
 }
 
+/* Адаптивные стили для ширины экрана 540px */
 @media (max-width: 540px) {
     .logo img {
-        max-width: 200px;
+        max-width: 200px; /* Уменьшаем максимальную ширину логотипа */
     }
 
     .content {
-        max-width: 95%;
-        margin-top: 100px;
+        max-width: 95%; /* Максимальная ширина контента в процентах */
+        margin-top: 150px; /* Уменьшаем верхний отступ для контента */
     }
 
     h1 {
-        font-size: 1.8em;
+        font-size: 1.8em; /* Уменьшаем размер шрифта заголовка */
     }
 
     p {
-        font-size: 1em;
+        font-size: 1em; /* Уменьшаем размер шрифта параграфов */
     }
 
     .discount {
-        font-size: 1.2em;
-        padding: 6px 12px;
+        font-size: 1.2em; /* Уменьшаем размер шрифта промокода */
+        padding: 6px 12px; /* Уменьшаем внутренние отступы промокода */
     }
 }
